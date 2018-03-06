@@ -1,0 +1,28 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <!-- 网络加载的动画 -->
+    <style name="protocol_res_http_loading_transbac" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+	
+    <!-- 网络加载的动画全屏 -->
+    <style name="protocol_res_http_loading_transbac_full" parent="@style/protocol_res_http_loading_transbac">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    
+        <!-- 网络加载显示时动画 -->
+    <style name="protocol_res_dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/chose_photo_show</item>
+        <item name="android:windowExitAnimation">@anim/chose_photo_close</item>
+    </style>
+	
+</resources>

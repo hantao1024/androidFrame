@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="tab_selected_bg">#C4E1E1</color>
+
+    <!-- 三级灰色 -->
+    <color name="comm_gray_high">#333333</color>
+    <color name="comm_gray_mid">#666666</color>
+    <color name="comm_gray_low">#999999</color>
+    <color name="comm_gray_lower">#cccccc</color>
+    <color name="comm_gray_low_small">#f4f4f4</color>
+    <color name="comm_gray_low_smalls">#D9D9D9</color>
+    <color name="comm_gray_low_bg">#cfcfcf</color>
+    <color name="comm_user_line">#efefef</color>
+
+    <!-- 项目主蓝色调 -->
+    <color name="comm_blue_high">#579cf4</color>
+    <color name="game_blue">#3782fe</color>
+    <color name="comm_blue_mid">#2469c1</color>
+    <color name="comm_yellow_mid">#ff9921</color>
+    <color name="comm_blue_two">#0090ff</color>
+    <!-- 项目主红色调 -->
+    <color name="comm_red_high">#ff3939</color>
+    <color name="comm_red_mid">#cc0606</color>
+
+    <!-- 项目用到的颜色 -->
+    <!-- 半透明色 -->
+    <color name="common_half_transparent">#80000000</color>
+    <color name="common_half2_transparent">#a0000000</color>
+
+    <!-- 半透明蓝色 -->
+    <color name="common_half_transparent_blue">#80579cf4</color>
+
+    <!-- 背景色 -->
+    <color name="comm_ui_background">#f4f4f4</color>
+
+    <!-- #########################阅读界面############################### -->
+    <!-- 阅读界面的黑色 -->
+    <color name="browse_trans_black">#cc000000</color>
+    <!-- 阅读界面的黑蓝色-->
+    <color name="browse_trans_blue">#cc27abc3</color>
+    <!-- 阅读界面的橘色 -->
+    <color name="browse_trans_orange">#ccff915e</color>
+    <!-- 阅读界面的黄色 -->
+    <color name="browse_trans_yellow">#ccffb82d</color>
+
+    <!-- #########################搜索界面############################### -->
+    <!-- 热门搜索中的关键字随机色 -->
+    <color name="search_random_a">#42B5FF</color>
+    <color name="search_random_b">#0096FF</color>
+    <color name="search_random_c">#2775F7</color>
+
+    <!-- #########################推荐界面############################### -->
+    <!-- 推荐界面的Tabbar的文字灰色 -->
+    <color name="recommand_tabbar_txt">#D6E4FB</color>
+
+    <!-- ################# 吐糟背景颜色数组  ################# -->
+    <color name="publish_view0">#2775F7</color>
+    <color name="publish_view1">#2775F7</color>
+    <color name="publish_view2">#2775F7</color>
+    <color name="publish_view3">#0096FF</color>
+    <color name="publish_view4">#0096FF</color>
+    <color name="publish_view5">#42B5FF</color>
+    <color name="publish_view6">#42B5FF</color>
+    <color name="publish_view7">#42B5FF</color>
+    <color name="publish_view8">#58CEFF</color>
+    <color name="publish_view9">#58CEFF</color>
+    <!-- 我自己的吐糟颜色 -->
+    <color name="publish_color_myinteraction">#FBE288</color>
+
+    <!-- 下拉刷新的颜色配置 -->
+    <color name="my_pull_refresh_txt_color">@color/comm_gray_high</color>
+    <color name="my_pull_refresh_header_backgroud">@color/comm_gray_low_small</color>
+
+
+    <!-- 引导页颜色 -->
+    <color name="color_guide_p1">#c0FFB607</color>
+    <color name="color_guide_p2">#c00084FF</color>
+    <color name="color_guide_p3">#c08D58ED</color>
+    <color name="color_launch_bac">#0090FF</color>
+
+    <color name="header_circle_border">#cccccccc</color>
+
+
+    <!-- 发送评论背景 -->
+    <color name="push_comment_bg">#f9f9f9</color>
+    <color name="item_comment_bg">#E7F4FF</color>
+    <color name="item_comment_gone_bg">#F6F6F6</color>
+    <color name="item_comment_gone_text">#000000</color>
+    <!-- 消息中心 -->
+    <color name="btn_big_green_deep">#17a98c</color>
+
+    <color name="text_white">#ffffff</color>
+    <!-- 白色 -->
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_white_s">#fefefe</color>
+    <color name="bg_blue">#3783ef</color>
+    <color name="bg_game_blue">#468dfe</color>
+    <color name="bg_game_line">#ebeef6</color>
+    <color name="bg_game_line_s">#e9e9e9</color>
+    <color name="bg_game_line_two">#f4f4f4</color>
+    <color name="bg_binding_line">#eaeaea</color>
+    <color name="bg_binding_line_dialog">#e0e0e0</color>
+
+</resources>

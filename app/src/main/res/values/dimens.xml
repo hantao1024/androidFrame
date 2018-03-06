@@ -1,0 +1,72 @@
+<resources>
+	
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- #####################文字大小##################### -->
+    <!-- UI界面标题大小 -->
+    <dimen name="txt_ui_title">19dp</dimen>
+    <!-- UI通用文字大小 -->
+    <dimen name="txt_size_first">17dp</dimen>
+    <dimen name="txt_size_second">15dp</dimen>
+    <dimen name="txt_size_third">14dp</dimen>
+    <dimen name="txt_size_fourth">12dp</dimen>
+    <dimen name="txt_size_fifth">10dp</dimen>
+    <dimen name="txt_size_fifths">13dp</dimen>
+    <dimen name="txt_size_eight">8dp</dimen>
+    <dimen name="txt_size_six">16dp</dimen>
+    <dimen name="txt_size_eighteen">18dp</dimen>
+
+    
+    <!-- #####################控件大小##################### -->
+    <!-- (按钮统一高度)-->
+    <dimen name="view_common_btn_hei">50dp</dimen>
+    <!-- (界面线title底部线的高度) -->
+    <dimen name="view_common_title_bottom_line_h">2.5dp</dimen>
+    <!-- 统一放大镜的宽度 -->
+    <dimen name="view_titlebar_find_icon_wid">40dp</dimen>
+    <!-- (导航栏)-->
+    <dimen name="view_titlebar_hei">50dp</dimen>
+    <!-- (底部操作栏)-->
+    <dimen name="view_bottom_bar_hei">50dp</dimen>
+    <!-- (漫画列表)-->
+    <dimen name="view_cartoonlist_cellhei">145dp</dimen>
+    <!-- (漫画图大小:一类)-->
+    <dimen name="view_cartoon_width_first">90dp</dimen>
+    <dimen name="view_cartoon_height_first">115dp</dimen>
+    <!-- (漫画图大小:二类)-->
+    <dimen name="view_cartoon_width_second">70dp</dimen>
+    <dimen name="view_cartoon_height_second">90dp</dimen>
+    
+    <!-- 漫画阅读界面,顶部提示(加载中,还有上一话,下一话等标识的控件高度) -->
+    <dimen name="view_terminal_view_height">80dp</dimen>
+    
+    <!-- 普通界面左右边距 -->
+    <dimen name="common_ui_horizontal_marg">10dp</dimen>
+    
+    <!-- 更多,设置等界面,条形功能选项按钮的高度 -->
+    <dimen name="line_option_button_height">45dp</dimen>
+    
+    <!-- 分类界面 -->
+    <dimen name="index_classify_item_hei">140dp</dimen>
+    <dimen name="index_classify_item_img_width">105dp</dimen>
+    
+    
+    
+    <!-- 作品介绍界面:收藏作品和开始阅读两个按钮的宽度 -->
+    <dimen name="work_instruction_btn_width">70dp</dimen>
+    
+    <!-- 作品介绍页,功能选项TextView的高度(如:翻页模式) -->
+    <dimen name="work_browse_option_view_hei">32dp</dimen>
+
+
+    <!-- 游戏-->
+    <dimen name="view_game_width">57dp</dimen>
+    <dimen name="view_game_widths">60dp</dimen>
+
+
+    <dimen name="view_game_main_iv_width">158dp</dimen>
+    <dimen name="view_game_main_iv_hei">92dp</dimen>
+
+</resources>
