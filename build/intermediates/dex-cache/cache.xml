@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/hantao/Documents/WorkSpace/androidFrame/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/hantao/Documents/WorkSpace/androidFrame/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_52d0ac959e82f402f608a40497de989445aa539b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hantao/Documents/WorkSpace/androidFrame/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d95c5407acafe4a43db2f8d7d96bfbc24edf2281">
+        <dex dex="/Users/hantao/Documents/WorkSpace/androidFrame/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_6410f46a58e1f5e11a62feabacb9f3d4d8be5275/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/hantao/Documents/WorkSpace/androidFrame/app/libs/eventbus-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="/Users/hantao/Documents/WorkSpace/androidFrame/app/build/intermediates/transforms/dex/debug/folders/1000/2/eventbus-3.0.0_6d7e88a2277e3d6061fe34b8fe9c7a0346d0dc8d/classes.dex" />
+    </item>
+
+</items>
