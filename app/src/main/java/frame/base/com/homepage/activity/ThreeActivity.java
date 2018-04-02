@@ -32,7 +32,7 @@ public class ThreeActivity extends StepActivity {
     ListView lv_content;
 
     private static final String TAG = "ThreeActivity";
-    private String mBaseUrl = "https://api.base.com/dynamic/comicversion/android";
+    private String mBaseUrl = "https://nbsdk-baichuan.alicdn.com/2.0.0/applink.htm?plat=android&appKey=23261993";
     ShopListAdapter shopListAdapter;
     RefreshLayout refreshLayout;
     private List<User> userList = new LinkedList<>();

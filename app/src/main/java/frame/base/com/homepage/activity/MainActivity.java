@@ -32,8 +32,7 @@ public class MainActivity extends StepActivity {
     ListView lv_content;
 
     private static final String TAG = "MainActivity";
-    private String mBaseUrl = "https://api.base.com/dynamic/comicversion/android";
-    String urlStr = "https://avatar.base.com/65/11/6511f02f4f8c737914f75f5aefc96196.png";
+    private String mBaseUrl = "https://nbsdk-baichuan.alicdn.com/2.0.0/applink.htm?plat=android&appKey=23261993";
     ShopListAdapter shopListAdapter;
     RefreshLayout refreshLayout;
     private List<User> userList = new LinkedList<>();
