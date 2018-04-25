@@ -60,9 +60,44 @@ public class HomePageManager extends BaseManager {
                         try {
                             res = response.body().string();
                             User user=new User();
-                            user.setName(res);
+                            user.setName((String)res);
                             user.setUrl("https://avatar.base.com/65/11/6511f02f4f8c737914f75f5aefc96196.png");
                             UserNameDao.insertUser(user);
+                            EventBus.getDefault().post(HomePageEvents.pullSuccess(isLoadmore,true,res));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                    @Override
+                    public void failed(Call call, IOException e) {
+
+                    }
+                });
+            }
+        });
+    }
+
+
+    /**
+     * @param url
+     * @param myNetCall
+     */
+    public void doGetTwo(final boolean isLoadmore,final String url,final MyNetCall myNetCall) {
+        if (!isRelease()) {
+            Logger.d(url);
+        }
+        CApplication.getThreadPool().execute(new Runnable() {
+            @Override
+            public void run() {
+                //获取网络工具类实例
+                OkhttpHelper netUtils = OkhttpHelper.getInstance();
+                netUtils.getDataAsynFromNet(url, new OkhttpHelper.MyNetCall() {
+                    @Override
+                    public void success(Call call, Response response) throws IOException {
+                        final String res;
+                        try {
+                            res = response.body().string();
                             EventBus.getDefault().post(HomePageEvents.pullSuccess(isLoadmore,true,res));
                         } catch (IOException e) {
                             e.printStackTrace();

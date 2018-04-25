@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">dmzj-android</string>
+    <string name="browse_terminal_warning">已经到头了...</string>
+    <string name="browse_harding_loading">正在努力加载...</string>
+    <string name="text_save">保存</string>
+    <string name="text_share">分享</string>
+    <string name="shared_2_save_album">保存到相册</string>
+    <string name="shared_2_save_album_success">已保存到%s</string>
+    <string name="shared_2_save_album_start_save">正在保存...</string>
+    <string name="shared_2_save_album_failed">保存失败!</string>
 </resources>

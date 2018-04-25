@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
             android:clickable="true"
-            android:drawableLeft="@mipmap/img_back"
+            android:drawableLeft="@drawable/img_back"
             android:drawablePadding="5dp"
             android:gravity="center_vertical"
             android:onClick="onBack"

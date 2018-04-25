@@ -109,8 +109,8 @@ public class ProtocolDectorDialog extends Dialog implements ProtocolStatusObserv
 		mRoundCornerBack.addView(mLoadingText, mLoadingTextParams) ;
 
 		StateListDrawable mStateListDrawable = new StateListDrawable();
-		mStateListDrawable.addState(new int[]{-android.R.attr.state_focused,android.R.attr.state_pressed}, context.getResources().getDrawable( R.mipmap.protocol_res_mj)) ;
-		mStateListDrawable.addState(new int[]{-android.R.attr.state_focused,-android.R.attr.state_pressed}, context.getResources().getDrawable( R.mipmap.protocol_res_mk)) ;
+		mStateListDrawable.addState(new int[]{-android.R.attr.state_focused,android.R.attr.state_pressed}, context.getResources().getDrawable( R.drawable.protocol_res_mj)) ;
+		mStateListDrawable.addState(new int[]{-android.R.attr.state_focused,-android.R.attr.state_pressed}, context.getResources().getDrawable( R.drawable.protocol_res_mk)) ;
 		mCloseView  = new TextView(context) ;
 		mCloseView.setBackgroundDrawable(mStateListDrawable) ;
 		LayoutParams mCloseViewParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT) ;

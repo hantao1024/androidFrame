@@ -115,8 +115,8 @@ public abstract class KDBaseAdapter<Da> extends BaseAdapter {
     //                        .priority( Priority.LOW )//显示优先级
                     .transform(new RoundTransformation(getContext() , circularBead))
                     .crossFade()//或者使用 dontAnimate() 关闭动画
-                    .placeholder(R.mipmap.ic_launcher)//图片加载出来前，显示的图片
-                    .error(R.mipmap.ic_launcher)//图片加载失败后，显示的图片
+                    .placeholder(R.drawable.ic_launcher)//图片加载出来前，显示的图片
+                    .error(R.drawable.ic_launcher)//图片加载失败后，显示的图片
                     .into(imageView);
         } catch (Exception e) {
             e.printStackTrace();

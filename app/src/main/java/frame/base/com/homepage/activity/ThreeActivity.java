@@ -1,7 +1,9 @@
 package frame.base.com.homepage.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
+import android.view.View;
 import android.widget.ListView;
 
 import com.scwang.smartrefresh.layout.api.OnLoadmoreListener;
@@ -50,15 +52,23 @@ public class ThreeActivity extends StepActivity {
     }
 
     @Override
+    public void onAction(View v) {
+        super.onAction(v);
+        Intent intent=new Intent(ThreeActivity.this,FourActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
     protected void findViews() {
         setContentView(R.layout.activity_three);
+        showActionButton().setText("下一页");
         lv_content = generateFindViewById(R.id.lv_content);
         refreshLayout = generateFindViewById(R.id.refreshLayout);
 
 
         PageNavigationView tab = generateFindViewById(R.id.main_tab);
         navigationController = tab.material()
-                .addItem(android.R.drawable.ic_menu_compass, "位置")
+                .addItem(R.drawable.main_index_tab_selector_cart, "动漫")
                 .addItem(android.R.drawable.ic_menu_search, "搜索")
                 .addItem(android.R.drawable.ic_menu_help, "帮助")
                 .build();

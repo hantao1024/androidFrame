@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 阅读界面，滚动阅读 -->
+
+    <com.dmzj.manhua.views.MyViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.dmzj.manhua.views.MyViewPager>
+
+    <com.dmzj.manhua.shower.PhotoView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name" />
+
+    <!-- 广告控件区 -->
+    <RelativeLayout
+        android:id="@+id/layout_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/loading_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_size_second" />
+
+    <TextView
+        android:id="@+id/txt_terminal"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/browse_terminal_warning"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_size_second"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_oprations"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <com.dmzj.manhua.views.MySelctorTextView
+            android:id="@+id/txt_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/img_commbtn_trans"
+            android:gravity="center"
+            android:text="@string/text_share"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_second" />
+
+        <com.dmzj.manhua.views.MySelctorTextView
+            android:id="@+id/txt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/txt_share"
+            android:background="@drawable/img_commbtn_trans"
+            android:gravity="center"
+            android:text="@string/text_save"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_second" />
+    </RelativeLayout>
+
+</FrameLayout>
