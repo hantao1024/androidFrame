@@ -56,13 +56,14 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/action"
+                android:id="@+id/action_all"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:drawablePadding="5dp"
                 android:gravity="center"
                 android:onClick="onAction"
+                android:textColor="@color/comm_gray_high"
                 android:textSize="@dimen/txt_size_second" />
         </LinearLayout>
     </RelativeLayout>

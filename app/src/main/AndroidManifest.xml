@@ -32,6 +32,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBar">
         </activity>
+        <activity android:name="frame.base.com.base.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+        </activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

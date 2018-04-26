@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.dmzj.manhua.shower.HackyViewPager
+    <frame.base.com.publicviews.HackyViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.dmzj.manhua.shower.CirclePageIndicator
+    <frame.base.com.publicviews.CirclePageIndicator
         android:layout_marginBottom="10dp"
         android:id="@+id/indicator"
         android:layout_width="match_parent"

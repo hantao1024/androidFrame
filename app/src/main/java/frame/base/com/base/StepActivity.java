@@ -10,7 +10,10 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,6 +22,7 @@ import frame.base.com.R;
 import frame.base.com.publicutils.AppConfig;
 import frame.base.com.publicutils.ProtocolDectorDialog;
 import frame.base.com.publicutils.ProtocolDectorDialog.STYLE;
+import frame.base.com.publicviews.RoundTransformation;
 
 public abstract class StepActivity extends BaseActivity {
 	
@@ -388,5 +392,36 @@ public abstract class StepActivity extends BaseActivity {
 	public boolean isFinished() {
 		return isFinished;
 	}
-	
+	public  int IMG_CIRCULAR_BEAD = 20;
+	public void getBitmap(ImageView imageView, String url){
+		getBitmap(imageView,url,IMG_CIRCULAR_BEAD);
+	}
+	public void getBitmap(ImageView imageView, String url, int circularBead) {
+		try {
+			Glide.with(getActivity())
+					.load(url)
+					//                        .override(width,height)//这里的单位是px,可以设置显示大小
+
+					/**
+					 * DiskCacheStrategy 的枚举意义：
+
+					 DiskCacheStrategy.NONE 什么都不缓存
+					 DiskCacheStrategy.SOURCE 只缓存全尺寸图
+					 DiskCacheStrategy.RESULT 只缓存最终的加载图
+					 DiskCacheStrategy.ALL 缓存所有版本图（默认行为）
+					 **/
+					//                        .skipMemoryCache(true)
+					//                        .diskCacheStrategy( DiskCacheStrategy.NONE )
+
+
+					//                        .priority( Priority.LOW )//显示优先级
+					.transform(new RoundTransformation(getActivity() , circularBead))
+					.crossFade()//或者使用 dontAnimate() 关闭动画
+					.placeholder(R.drawable.ic_launcher)//图片加载出来前，显示的图片
+					.error(R.drawable.ic_launcher)//图片加载失败后，显示的图片
+					.into(imageView);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
