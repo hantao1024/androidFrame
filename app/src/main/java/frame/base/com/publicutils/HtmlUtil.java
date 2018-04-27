@@ -22,15 +22,12 @@ public class HtmlUtil {
 	private static String BODYHEAD="<body>";
 	private static String BODYEND="</body>";
 
-	private static String IMGHEAD="<img src=\"";
-	private static String IMGEND="\"alt=\"图片占位符\">";
-
 
 	private static String SCRIPTHEAD="<script>";
 	private static String SCRIPTEND="</script>";
 
 	private static String IMGBODYONE="<img onload=\"this.onclick = function() {  \n" +
-			"        window.location.href = 'sx://github.com/dsxNiubility?src=' +this.src+'&top=' + this.getBoundingClientRect().top + '&whscale=' + this.clientWidth/this.clientHeight ;\n" +
+			"        window.location.href = 'dmzjimage://?src=' +this.src;\n" +
 			"    };\" ";
 
 
